@@ -471,38 +471,7 @@ textarea {
 }
 
 
-/* lato-regular - latin */
-@font-face {
-    font-display: swap;
-    /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-    font-family: 'Lato';
-    font-style: normal;
-    font-weight: 400;
-    src: url('../fonts/lato-v24-latin-regular.woff2') format('woff2');
-    /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
-}
 
-/* lato-700 - latin */
-@font-face {
-    font-display: swap;
-    /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-    font-family: 'Lato';
-    font-style: normal;
-    font-weight: 700;
-    src: url('../fonts/lato-v24-latin-700.woff2') format('woff2');
-    /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
-}
-
-/* lato-900 - latin */
-@font-face {
-    font-display: swap;
-    /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-    font-family: 'Lato';
-    font-style: normal;
-    font-weight: 900;
-    src: url('../fonts/lato-v24-latin-900.woff2') format('woff2');
-    /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
-}
 
 html {
     box-sizing: border-box;
@@ -516,7 +485,7 @@ html {
 }
 
 body {
-    font-family: 'Lato';
+    font-family: 'Times New Roman';
     font-style: normal;
     font-size: 16px;
     line-height: 1.2;
@@ -533,6 +502,7 @@ img {
 .wrapper {
     max-width: 1060px;
     margin: 0 auto;
+    padding: 0 15px;
 
 }
 
@@ -564,12 +534,11 @@ img {
 /* header */
 
 .header {
+    font-family: 'Times New Roman';
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
-    -webkit-transition: .2s linear;
-    -o-transition: .2s linear;
     transition: .2s linear;
     padding-bottom: 20px;
     z-index: 999;
@@ -587,7 +556,7 @@ img {
     flex-wrap: wrap;
     -webkit-box-align: end;
     -ms-flex-align: end;
-    align-items: flex-end;
+    align-items: center;
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
     justify-content: space-between;
@@ -604,6 +573,7 @@ img {
 
 .header__item {
     margin-right: 62px;
+  
 }
 
 .header__item:last-child {
@@ -615,6 +585,7 @@ img {
     line-height: 24px;
     color: white;
     text-decoration: none;
+    
 }
 
 .header__link:hover,
@@ -660,6 +631,7 @@ img {
 /* intro */
 
 .intro {
+    font-family: 'Times New Roman';
     min-height: 100vh;
     background: url(../img/Hero.jpg) no-repeat center;
     background-size: cover;
@@ -738,6 +710,7 @@ img {
 
 
 .search-form__submit {
+    font-family: 'Times New Roman';
     padding: 17px 3px;
     text-transform: uppercase;
     font-weight: 500;
@@ -758,6 +731,7 @@ img {
 /* benefits */
 
 .benefits {
+    font-family: 'Times New Roman';
     margin-bottom: 131px;
 }
 
@@ -767,6 +741,7 @@ img {
     margin: 0 auto;
     box-shadow: 0px 2px 20px rgba(21, 24, 36, 0.15993);
     position: relative;
+    margin-bottom: 131px;
 
 }
 
@@ -775,7 +750,7 @@ img {
     font-weight: 500;
     font-size: 35px;
     line-height: 42px;
-    padding: 93px 100px 88px 100px;
+    padding: 93px 100px 120px 100px;
     position: absolute;
     top: 0;
     left: 0;
@@ -801,12 +776,16 @@ img {
 }
 
 .benefits__card-pic {
-    max-width: 66px;
     margin-bottom: 37px;
+    width: 66px;
+    height: 66px;
 }
 
 .benefits__card-thumb {
     display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
 }
 
 .benefits__card-title {
@@ -820,8 +799,10 @@ img {
     font-size: 16px;
     line-height: 24px;
     margin-bottom: 39px;
+    
 }
 .benefits__card-more{
+    font-family: 'Times New Roman';
     display: inline-block;
     padding-right: 59px;
     font-size: 16px;
@@ -844,7 +825,8 @@ img {
 /*places */
 
 .places {
-    margin-bottom: 131px;
+    font-family: 'Times New Roman';
+    margin-bottom: 107px;
 }
 
 .places__caption {
@@ -867,6 +849,7 @@ img {
 }
 
 .places__view-all {
+    font-family: 'Times New Roman';
     padding-right: 59px;
     font-size: 16px;
     color: #670A0A;
@@ -961,6 +944,7 @@ img {
 /* Work styles start */
 
 .work{
+    font-family: 'Times New Roman';
     margin-bottom: 139px;
 }
 
@@ -1004,6 +988,7 @@ img {
 /* Top places styles start */
 
 .top{
+    font-family: 'Times New Roman';
     margin-bottom: 86px;
 }
 .top__title{
@@ -1089,6 +1074,7 @@ img {
 /* Footer styles start */
 
 .footer{
+    font-family: 'Times New Roman';
     background: #2C0707;
     padding: 119px 0;
     margin-top: 71px;
